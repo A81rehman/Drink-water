@@ -8,10 +8,7 @@ smallCups.forEach((cup, idx) => {
 })
 
 function Cups1(idx) {
-    if (idx===7 && smallCups[idx].classList.contains("full")) idx--;
-    else if(smallCups[idx].classList.contains('full') && !smallCups[idx].nextElementSibling.classList.contains('full')) {
-        idx--
-    }
+    if (idx===9) idx--;
 
     smallCups.forEach((cup, idx2) => {
         if(idx2 <= idx) {
